@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.popup_wrapper{
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+}
+
+.popup_subheading{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    /* or 178% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+
+    /* Purple / Dark */
+
+    color: #6C5CE7;
+}
+
+.text_content{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    /* or 178% */
+
+    display: flex;
+    align-items: center;
+
+    /* 64% Gray dark */
+
+    color: #5C5C5C;
+    margin-left: 12px;
+}
+
+.each_content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.bottom_content{
+    display: flex;
+}
+
+.circle_image_wrapper{
+    position: absolute;
+    top: 0;
+}
+
+.button_wrapper{
+    position: relative;
+}
+
+.overlap_wrapper{
+    position: relative;
+}
