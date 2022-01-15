@@ -1,19 +1,20 @@
 {
   "manifest_version": 2,
   "name": "My Extension",
-  "version": "0.1",
+  "version": "0.2",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["jquery.js", "content.js"]
+      "js": ["content/lib/jquery.js", "content/lib/fabric.min.js", "content/content.js"]
     }
   ],
-  "permissions": ["alarms", "declarativeContent", "storage", "<all_urls>"],
+  "permissions": ["tabs", "alarms", "declarativeContent", "storage", "<all_urls>"],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background/background.js"]
   },
   "browser_action": {
     "default_icon": "pencil.png",
-    "default_popup": "index.html"
+    "default_popup": "popup/index.html",
+    "default_title": "Welcome to Dizzybear!"
   }
 }
